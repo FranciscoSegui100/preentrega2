@@ -51,12 +51,18 @@
   background-color: #003375;
   color: #ffffff;
 }
-
-@media screen and (min-width:780px){
-  .navbar{
-    display: none;
-  }
+.barranav{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }
+.navtext{
+  justify-content: flex-end;
+}
+.w-100{
+  width: 100vw;
+}
+
 #Info{
   width: 100vw;
   color: #000000;
@@ -65,21 +71,21 @@
   width: 100vw;
   padding: 300px;
   border-top: none;
-  background-image: linear-gradient(to bottom,  #ffff, blue);
+  background-image: radial-gradient(white, rgb(47, 129, 252));
 }
 @media screen and (max-width:780px) {
   #container{
     display: flex;
     justify-content: space-around;
-    margin-left: 0px;
-    width: 100vw;
     border-bottom: groove #003375;
+    padding: 10px;
+    margin-top: 200px;
   }
   #container .titulo{
     border-bottom: groove#003375;
   }
   #Tipos {
-    width: 100%;
+    display: none;
   }
   #Tipos .DT {
     display: none;
@@ -87,11 +93,11 @@
   #Tipos .Dl {
     display: none;
   }
+  #Tipos .Dc {
+    display: none;
+  }
   #Info{
     width: 100%;
-  }
-  .Descripcion{
-    display: none;
   }
   #Redesindx {
     flex-wrap: wrap;
