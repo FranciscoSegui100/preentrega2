@@ -1,0 +1,970 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#body{
+  background:#ffffff;
+}
+#header .LogoImg{
+  text-align: left;
+  padding-left: 3px;
+  list-style: none;
+  line-height: 20px;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: start; 
+}
+#BarraNav{
+  width: 100%;
+  background-color: #003570;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  z-index: 998;
+}
+#BarraNav a{
+  display: flex;  
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #003375  ;
+  border-radius: 8px;
+}
+#BarraNav a:hover{
+  background-color: #003375;
+  color: #ffffff;
+}
+
+@media screen and (min-width:780px){
+  .navbar{
+    display: none;
+  }
+}
+#Info{
+  width: 100vw;
+  color: #000000;
+}
+#container{
+  width: 100vw;
+  padding: 300px;
+  border-top: none;
+  background-image: linear-gradient(to bottom,  #ffff, blue);
+}
+@media screen and (max-width:780px) {
+  #container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+    width: 100vw;
+    border-bottom: groove #003375;
+  }
+  #container .titulo{
+    border-bottom: groove#003375;
+  }
+  #Tipos {
+    width: 100%;
+  }
+  #Tipos .DT {
+    display: none;
+  }
+  #Tipos .Dl {
+    display: none;
+  }
+  #Info{
+    width: 100%;
+  }
+  .Descripcion{
+    display: none;
+  }
+  #Redesindx {
+    flex-wrap: wrap;
+  }
+  #Redesindx .Twi{
+    margin-left: 0%;
+  }
+}
+
+#container .titulo {
+  color: #000000;
+  border-top: groove #003375;
+  border-right: groove #003375;
+  border-left: groove #003375;
+  line-height: 100px;
+  font-family:'Abel', sans-serif;;
+  text-align: center;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  margin-top: -190px;
+}
+#container .Descripcion{
+  color: #000000;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight:bold;
+  background-color: transparent;
+  border-top: groove none;
+  border-right: groove #003375;
+  border-bottom: groove #003375 ;
+  border-left: groove #003375;
+  padding: 10px;
+  }
+
+#Tipos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #003375;
+  gap: 150px;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 30px;
+}
+.Dl{
+  display: grid;
+  color: #ffffff;
+  justify-content: start;
+  grid-column: 1/2;
+  transform: scale(1,1);
+}
+.Dl:hover{
+  transform: scale(1.3, 1.3);
+  transition: all 1s;
+}
+.Img-Dl{
+  width: auto;
+  height: 150px;
+  justify-content: start;
+  
+}
+.Dc{
+  color: #ffffff;
+  display: grid;
+  justify-content: start;
+  grid-column: 2/3;
+  transform: scale(1,1);
+}
+.Dc:hover{
+  transform: scale(1.3, 1.3);
+  transition: all 1s;
+}
+.Img-Dc{
+  width: auto;
+  height: 150px;
+  justify-content: start;
+}
+.DT{
+  color: #ffffff;
+  display: grid;
+  justify-content: start;
+  grid-column: 3/4;
+  transform: scale(1, 1);
+}
+.DT:hover{
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+.Img-Dt{
+  width: auto;
+  height: 150px;
+  justify-content: end;
+}
+#Title-3{
+  background-color: #003375;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ffffff;
+} 
+#Title-3 .PyV{
+  justify-content: center;
+  margin-top: 60px;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+#Titulo-3{
+  color: #003375;
+  padding: 30px;
+  border-bottom: solid 2px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#Redesindx{
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+  justify-content: center;
+  padding: 40px;
+}
+
+#PieDePag2{
+  color: #003375;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#PieDePag2 .PolPriv{
+  display: flex;
+  justify-content: start;
+  color: #003375;
+}
+#Pie-de-pag .h4{
+  color: #003375;
+}
+#pie-de-pag{
+  margin-bottom: 55px ;
+  display: flex;
+  align-items: center;
+} 
+.Ig {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  margin-right: 300px;
+  transform: scale(1,1);
+}
+.Ig:hover{
+  transform: scale(1.3, 1.3);
+}
+.Fb{
+  color: #003375; 
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  transform: scale(1, 1);
+}
+.Fb:hover{
+  transform: scale(1.3, 1.3);
+}
+.Twi{
+  color: #003375;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+ margin-left: 196px;
+ transform: scale(1, 1);
+}
+.Twi:hover{
+  transform: scale(1.3, 1.3);
+}
+
+/* Hoja contacto */
+#Contacto{
+  background: #ffffff;
+}
+#LogoCont{
+  text-align: left;
+  padding-left: 3px;
+  list-style: none;
+  line-height: 20px;
+ z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: start;
+}
+#Barra-nav-contacto{
+  width: 100%;
+  background-color: #003375;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  margin-top:-3px;
+  z-index: 998;
+}
+#Barra-nav-contacto a{
+  display: flex;
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #003375  ;
+  border-radius: 8px;
+}
+#Barra-nav-contacto a:hover{
+  background-color: #003375;
+  color: #ffffff;
+}
+.Titulo-contacto-1{
+  margin-top: 100px;
+}
+.Form1{
+  background-color: #003375;
+  padding: 15px;
+}
+#RedesCt{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 151px 150px 150px;
+  justify-items: end;
+  padding: 50px;
+}
+.Insta{
+  grid-column: 1/2;
+  transform: scale(1, 1);
+}
+.Insta:hover{
+  transform: scale(1.2, 1.2);
+}
+.Face{
+  grid-column: 1/2;
+  transform: scale(1, 1);
+  text-align: center;
+}
+.Face:hover{
+  transform: scale(1.2, 1.2);
+}
+.Twit{
+  grid-column: 3/4 ;
+  transform: scale(1,1);
+  text-align: center;
+}
+.Twit:hover{
+  transform: scale(1.2, 1.2);
+}
+#opcionesDeContacto {
+  display: grid;
+  background-color: #003375;
+  color: #ffffff;
+  padding: 50px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#opcionesDeContacto .TelefonoCont{
+  grid-column: 1/2;
+  font-size: 20px;
+}
+#opcionesDeContacto .direccion{
+  grid-column: 2/3;
+  font-size: 20px;
+}
+#opcionesDeContacto .direccion a{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+#opcionesDeContacto .contactoPrensa{
+  grid-column: 3/4;
+  font-size: 20px;
+}
+#Form-Contacto .nombre{
+  background-color: #ffffff;
+  color: #000000;
+}
+.nombre:focus{
+  height: 27px;
+}
+#Form-Contacto .apellido{
+  background-color: #ffffff;  
+  color: #000000;
+}
+.apellido:focus{
+  height: 27px;
+}
+#Form-Contacto .edad{
+  background-color: #ffffff;
+  color: #000000;
+}
+.edad:focus{
+  height: 27px;
+}
+#Form-Contacto .telefono{
+  background-color: #ffffff;
+  color: #000000;
+}
+.telefono:focus{
+  height: 27px;
+}
+#Form-Contacto .email{
+  background-color: #ffffff;
+  color: #000000;
+  width: 250px;
+} 
+.email:focus{
+  height: 27px;
+}
+#Form-Contacto .coment{
+  text-align: start;
+  margin-top: 20px;
+}
+#Form-Contacto .comentarios{
+  justify-content:start;
+  background-color: #ffffff;
+  color: #000000;
+  width: 1200px;
+  height: 210px;
+}
+#Form-Contacto .Titulo-contacto-1{
+  color: #000000;
+}
+#Form-Contacto .Form-1{
+  color: #ffffff;
+  font-weight: bold;
+}
+#Form-Contacto .buttons{
+text-align: start;
+}
+.enviar{
+  padding: 10px;
+}
+.borrar{
+  padding: 10px;
+}
+  #PieDePaginaContacto .Trabajr{
+    color: #003570;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #PieDePaginaContacto .Plt{
+    display: flex;
+    color: #003375;
+  }
+/* Hoja Abogados */
+
+#Abogados{
+  color: #003375;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-areas: 
+  "PieDePagAb" "PieDePagAb" "PieDePagAb"
+  "headerAb" "headerAb" "headerAb"
+  "Form-Contacto" "Form-Contacto" "Form-Contacto"
+  ;
+}
+#LogoAb{
+  text-align: left;
+  padding-left: 3px;
+  list-style: none;
+  line-height: 20px;
+ z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: start; 
+}
+#Barra-nav-abogados .Barra-nav{
+  width: 100%;
+  background-color: #003375;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  margin-top: 0px;
+}
+#Barra-nav-abogados .Barra-nav a{
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #003375  ;
+  border-radius: 8px;
+}
+#Barra-nav-abogados .Barra-nav a:hover{
+  background-color: #003375;
+  color: #ffffff;
+}
+.Equipo-de-abogados{
+  display: flex;
+  margin-right: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.Descripciones{
+  margin-top: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.Abogados2{
+  display: flex;
+  height: 490px;
+  gap: 10px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+.Cr7{
+  width: auto;
+  
+  justify-content: start;
+}
+.Messi{
+  width: 269px;
+  height: 188px;
+  justify-content: start;
+}
+.RobertCar{
+  width: auto;
+  height: auto;
+  justify-content: start;
+}
+.Cali{
+  width: 900;
+  height: 600;
+  justify-content: start;
+}
+.MarcRed{
+  width: 900;
+  height: 600;
+  justify-content: start
+}
+#Tabla-efectividad{
+  border: 1px solid #000;
+  background-color: #003375;
+  display: flex;
+  justify-content: center;
+  color: #333; 
+  font-family: Helvetica, Arial, sans-serif; 
+  border-collapse: collapse;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+#Tabla-efectividad .Fila{
+  color: #000000;
+  width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 5px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+   background-color: #E8EDFF;
+   border: 1px solid transparent; height: 30px;
+}
+#Tabla-efectividad .Fila2{
+  color: #000000;
+  background-color: #B9C9FE;
+  width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 5px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+   
+}
+#Tabla-efectividad .Fila3{
+  color: #000000;
+  background-color: #E8EDFF;
+  width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 5px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+#Tabla-efectividad .Fila4{
+  color: #000000;
+  width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 5px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+ background-color: #B9C9FE;
+}
+#Tabla-efectividad .Fila5{
+  color: #000000;
+  width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 5px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+   background-color: #E8EDFF;
+  }
+  #pie-de-pagAb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+  }
+  #PieDePagAb{
+    color: #ffffff;
+    background-color: #003375;
+  }
+  /* Hoja "Donde estamos" */
+  #BodyDE{
+    background-color: #ffffff;
+  }
+  #LogoDE{
+    text-align: left;
+    padding-left: 3px;
+    list-style: none;
+    line-height: 20px;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: start; 
+  }
+#BarraNavDe .BarraNavDe {
+  width: 100%;
+  background-color: #003375;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  margin-top: 0px;
+  
+}
+#BarraNavDe a{
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #003375 ;
+  border-radius: 8px;
+}
+#BarraNavDe a:hover{
+  background-color: #003375;
+  color: #ffffff;
+}
+
+#Descripción{
+  color: #003375;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 110px;
+}
+#Descripción .h1{
+  text-align: center;
+  font-size: 40px;
+}
+#Ayuda{
+  text-align: center;
+  font-size: 25px;
+}
+.Maps{
+  display: flex;
+  justify-content: center;
+}
+#pie-de-pagDe{
+  background-color: #003375;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  padding: 50px;
+  justify-content: center;
+}
+#PieDePagDe{
+  background-color: #003375;
+  color: #ffffff;
+}
+/* Hoja Sobre nosotros */
+#BodySN{
+  background-color: #C9C9C9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23003575'/%3E%3Cstop offset='1' stop-color='%23C9C9C9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23DEF3FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23DEF3FF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.04'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+display: grid;
+}
+#LogoSn{
+  text-align: left;
+  padding-left: 3px;
+  list-style: none;
+  line-height: 20px;
+ z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: start; 
+}
+#barra-nav-sn .barra-nav{
+  width: 100%;
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  margin-top: 0px;
+}
+#barra-nav-sn a{
+  background-color: #003375;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #ffffff ;
+  border-radius: 8px;
+}
+#barra-nav-sn a:hover{
+  background-color: #ffffff;
+  color: #003375;
+}
+
+#Sobre-nos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 400px ;
+
+}
+#Sobre-nos .Titulo{
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  justify-content: end;
+}
+#Sobre-nos .Descripcion{
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: start;
+  justify-content: end;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 20px;
+  margin-left: 652px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-top: 350px;
+}
+#multimedia .Imagen{
+  display: flex;
+  justify-content: start;
+}
+#video{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 3.5/4;
+}
+#video .h2{
+  display: grid;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  grid-column: 1/2;
+}
+#video .videoyt{
+  grid-row: 4/5;
+}
+#pie-de-pagSn{
+  display: flex;
+  background-color: #C9C9C9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23003575'/%3E%3Cstop offset='1' stop-color='%23C9C9C9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23DEF3FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23DEF3FF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.04'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  flex-direction: row;
+  gap: 70px;
+  margin-top: 50px;
+  justify-content:  space-around;
+}
+#PieDePagSn{
+  margin-top: 10px;
+  color: #000000;
+}
+/* Hoja Opiniones */
+#BodyOp{
+  background-color: #003375;
+}
+#LogoOp{
+  text-align: left;
+  padding-left: 3px;
+  list-style: none;
+  line-height: 20px;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: start; 
+} 
+#barra-nav-op .BarraNavOp{
+  width: 100%;
+  background-color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  margin-top: 0px;
+}
+#barra-nav-op a{
+  background-color: #003375;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content:end ;
+  flex: auto;
+  color: #ffffff ;
+  border-radius: 8px;
+}
+#barra-nav-op a:hover{
+  background-color: #ffffff;
+  color: #003375;
+}
+#Opiniones{
+  display: grid;
+  background-color: #ffffff;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 100px;
+  grid-template-columns: 2fr 2fr 2fr ;
+  grid-template-rows: 3fr;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(241,640,276)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230053BF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='1496' height='1246.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+#TituloOp{
+  margin-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: solid #ffffff 3px;
+  padding: 45px;
+  margin-bottom: -11px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(241,640,276)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230053BF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='1496' height='1246.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; 
+}
+#Opiniones .Persona1{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona2{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona3{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona4{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona5{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona6{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona7{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+#Opiniones .Persona8{
+  background-color: #003375;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#pie-de-pag-op{
+  background-color: #003375;
+  color: #ffffff;
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  gap: 330px;
+  justify-content: center;
+}
+#pie-de-pag .IgOp{
+  transform: scale(1, 1);
+}
+.IgOp:hover{
+  transform: scale(1.3, 1.3);
+}
+#CondicionesOp{
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+
+   
