@@ -293,9 +293,13 @@
     grid-row: 3/4;
     margin-left: -10px;
   }
+}
+@media screen and (min-width:780px) {
+  #carouselExampleCaptions{
+    display: none;
+  }
   
 }
-
 /* Hoja contacto */
 #Contacto{
   background: #ffffff;
