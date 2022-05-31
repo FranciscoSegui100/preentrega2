@@ -73,47 +73,6 @@
   border-top: none;
   background-image: radial-gradient(white, rgb(47, 129, 252));
 }
-@media screen and (max-width:780px) {
-  #container{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: groove #003375;
-    padding: 10px;
-  }
-  #container .titulo{
-    border-bottom: groove#003375;
-  }
-  .dlmedia{
-    display: flex;
-  }
-  #Tipos {
-    display: none;
-  }
-  #Tipos .DT {
-    display: none;
-  }
-  #Tipos .Dl {
-    display: none;
-  }
-  #Tipos .Dc {
-    display: none;
-  }
-  #Info{
-    width: 100%;
-  }
-  #Redesindx {
-    display: flex;
-  }
-  #Redesindx .Fb{
-    margin-left: 0%;
-    width: 34px;
-    height: 34px;
-  }
-  #Redesindx .Ig{
-    width: 34px;
-    height: 34px;
-  }
-}
 
 #container .titulo {
   color: #000000;
@@ -139,7 +98,7 @@
   border-bottom: groove #003375 ;
   border-left: groove #003375;
   padding: 10px;
-  }
+}
 
 #Tipos{
   display: grid;
@@ -242,6 +201,56 @@
   display: flex;
   justify-content: start;
   color: #003375;
+}
+@media screen and (max-width:780px) {
+  #container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: groove #003375;
+    padding: 10px;
+  }
+  #container .titulo{
+    border-bottom: groove#003375;
+  }
+  .dlmedia{
+    display: flex;
+  }
+  #Tipos {
+    display: none;
+  }
+  #Tipos .DT {
+    display: none;
+  }
+  #Tipos .Dl {
+    display: none;
+  }
+  #Tipos .Dc {
+    display: none;
+  }
+  #Info{
+    width: 100%;
+  }
+  #Redesindx {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
+  }
+  #Redesindx .Fb{
+    margin-left: 0%;
+    columns: 1/2;
+    grid-row: 2/3;
+  }
+  #Redesindx .Ig{
+    columns: 1/2;
+    grid-row: 1/2;
+    
+  }
+  #Redesindx .Twi{
+    columns: 1/2;
+    grid-row: 3/4;
+    margin-left: -10px;
+  }
 }
 #Pie-de-pag .h4{
   color: #003375;
