@@ -832,41 +832,7 @@ display: grid;
   display: flex;
   justify-content: start; 
 } 
-#barra-nav-op .BarraNavOp{
-  width: 100%;
-  background-color: #ffffff;
-  list-style-type: none;
-  text-decoration: none;
-  position: fixed;
-  text-align: center;
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  margin-top: 0px;
-}
-#barra-nav-op a{
-  background-color: #003375;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  color: #ffffff ;
-  border-radius: 8px;
-}
-#barra-nav-op a:hover{
-  background-color: #ffffff;
-  color: #003375;
-}
+
 #Opiniones{
   display: grid;
   background-color: #ffffff;
@@ -881,7 +847,6 @@ background-attachment: fixed;
 background-size: cover;
 }
 #TituloOp{
-  margin-top: 100px;
   text-align: center;
   color: #ffffff;
   border-bottom: solid #ffffff 3px;
@@ -951,6 +916,21 @@ background-size: cover;
 #CondicionesOp{
   color: #ffffff;
   margin-top: 10px;
+}
+@media screen and (max-width:780px) {
+  #TituloOp{
+    color: #003375;
+  }
+  #Opiniones{
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+  #pie-de-pag-op{
+    display: grid;
+    justify-content: start;
+    gap: initial;
+  }
+  
 }
 
 
