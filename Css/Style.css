@@ -235,7 +235,7 @@
     display: grid;
     grid-template-columns: 30px 40px 40px;
     grid-template-rows: 40px;
-    gap: 10px;
+    gap: 100px;
   }
     .Ig{
       grid-row: 1/2;
@@ -245,9 +245,8 @@
       grid-row: 1/2;
       grid-column: 2/3;
     }
-    .Twi{
-      grid-row: 1/2;
-      grid-column: 3/4;
+    .Twitterindx{
+      margin-top: -8px;
     }
 }
 @media screen and (min-width:780px) {
@@ -260,51 +259,7 @@
 #Contacto{
   background: #ffffff;
 }
-#LogoCont{
-  text-align: left;
-  padding-left: 3px;
-  list-style: none;
-  line-height: 20px;
- z-index: 999;
-  position: fixed;
-  display: flex;
-  justify-content: start;
-}
-#Barra-nav-contacto{
-  width: 100%;
-  background-color: #003375;
-  list-style-type: none;
-  text-decoration: none;
-  position: fixed;
-  text-align: center;
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  margin-top:-3px;
-  z-index: 998;
-}
-#Barra-nav-contacto a{
-  display: flex;
-  background-color: #ffffff;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  color: #003375  ;
-  border-radius: 8px;
-}
-#Barra-nav-contacto a:hover{
-  background-color: #003375;
-  color: #ffffff;
-}
+
 .Titulo-contacto-1{
   margin-top: 100px;
 }
@@ -341,6 +296,26 @@
 }
 .Twit:hover{
   transform: scale(1.2, 1.2);
+}
+#redesctmobile{
+  display: none;
+}
+@media screen and (max-width:780px) {
+  #RedesCt{
+    display: none;
+  }
+  #redesctmobile{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 135px;
+    margin-bottom: -170px;
+  }
+  #opcionesDeContacto .contactoPrensa{
+    display: none;
+  }
+  #opcionesDeContacto{
+    gap: 50px;
+  }
 }
 #opcionesDeContacto {
   display: grid;
@@ -819,9 +794,15 @@ display: grid;
     display: none;
   }
   #redesmobile{
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 60px 60px;
+    gap: 80px;
     margin-top: 100px;
+    margin-bottom: -100px;
 }
+  .TwitterSn{
+    margin-top: -7px;
+  }
 }
 /* Hoja Opiniones */
 #BodyOp{
