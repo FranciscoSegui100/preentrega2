@@ -295,12 +295,11 @@
   #RedesCt{
     display: none;
   }
-  #redesctmobile{
+  #redesctmobile {
     display: grid;
     grid-template-columns: 30px 30px 30px;
-    gap: 135px;
-    margin-bottom: -170px;
-  }
+    justify-content: space-around;
+}
   #opcionesDeContacto .contactoPrensa{
     display: none;
   }
@@ -410,107 +409,43 @@ text-align: start;
     color: #003375;
   }
 /* Hoja Abogados */
-
-#Abogados{
+.tituloAb{
+  text-align: center;
   color: #003375;
-  background-color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.equipoDeAbogados{
   display: grid;
-  grid-template-areas: 
-  "PieDePagAb" "PieDePagAb" "PieDePagAb"
-  "headerAb" "headerAb" "headerAb"
-  "Form-Contacto" "Form-Contacto" "Form-Contacto"
-  ;
-}
-#LogoAb{
-  text-align: left;
-  padding-left: 3px;
-  list-style: none;
-  line-height: 20px;
- z-index: 999;
-  position: fixed;
-  display: flex;
-  justify-content: start; 
-}
-#Barra-nav-abogados .Barra-nav{
-  width: 100%;
-  background-color: #003375;
-  list-style-type: none;
-  text-decoration: none;
-  position: fixed;
-  text-align: center;
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  margin-top: 0px;
-}
-#Barra-nav-abogados .Barra-nav a{
-  background-color: #ffffff;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  color: #003375  ;
-  border-radius: 8px;
-}
-#Barra-nav-abogados .Barra-nav a:hover{
-  background-color: #003375;
-  color: #ffffff;
-}
-.Equipo-de-abogados{
-  display: flex;
-  margin-right: 40px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.Descripciones{
-  margin-top: 100px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.Abogados2{
-  display: flex;
-  height: 490px;
-  gap: 10px;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: center;
-}
-.Cr7{
-  width: auto;
-  
-  justify-content: start;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #003375;
+  gap:20px;
 }
 .Messi{
-  width: 269px;
-  height: 188px;
-  justify-content: start;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-.RobertCar{
-  width: auto;
-  height: auto;
-  justify-content: start;
+.Cr7{
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-.Cali{
-  width: 900;
-  height: 600;
-  justify-content: start;
+.rc{
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
-.MarcRed{
-  width: 900;
-  height: 600;
-  justify-content: start
+.carlos{
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
+.marcos{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+
+
+
 #Tabla-efectividad{
   border: 1px solid #000;
   background-color: #003375;
@@ -591,6 +526,58 @@ text-align: start;
     color: #ffffff;
     background-color: #003375;
   }
+  #redesmobileab{
+    display: none;
+  }
+  #Twitter{
+    transform: scale(1, 1);
+  }
+  #Twitter:hover{
+    transform: scale(1.3, 1.3);
+  }
+  @media screen and (max-width:780px) {
+    .equipoDeAbogados{
+      display: grid;
+      grid-template-columns: 1fr;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #003375;
+      gap: 10px;
+    }
+    .Messi{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .Cr7{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .rc{
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .carlos{
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    .marcos{
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+    
+    #pie-de-pagAb{
+      display: none;
+    }
+    #redesmobileab{
+      display: grid;
+      grid-template-columns: 30px 30px 50px;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .tw-ab{
+      margin-top: -8px ;
+    }
+    
+  }
   /* Hoja "Donde estamos" */
   #BodyDE{
     background-color: #ffffff;
@@ -667,7 +654,9 @@ text-align: start;
   padding: 50px;
   justify-content: center;
 }
-
+#redesmobileDe{
+  display: none;
+}
 @media screen and (max-width:780px) {
   #pie-de-pagDe{
     display: none;
@@ -799,11 +788,12 @@ display: grid;
     display: none;
   }
   #redesmobile{
-    display: grid;
-    grid-template-columns: 30px 60px 60px;
-    gap: 80px;
-    margin-top: 100px;
-    margin-bottom: -100px;
+      display: grid;
+      grid-template-columns: 30px 60px 60px;
+      gap: 80px;
+      margin-top: 100px;
+      margin-bottom: -100px;
+      justify-content: space-around;
 }
   .TwitterSn{
     margin-top: -7px;
@@ -908,6 +898,9 @@ background-size: cover;
   color: #ffffff;
   margin-top: 10px;
 }
+#redesmobileop{
+  display: none;
+}
 @media screen and (max-width:780px) {
   #TituloOp{
     color: #003375;
@@ -917,11 +910,15 @@ background-size: cover;
     margin-bottom: 10px;
   }
   #pie-de-pag-op{
-    display: grid;
-    justify-content: start;
-    gap: initial;
+    display: none;
   }
-  
+
+  #redesmobileop {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    justify-content: space-around;
+}
 }
 
 
