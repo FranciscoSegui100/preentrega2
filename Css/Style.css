@@ -667,6 +667,19 @@ text-align: start;
   padding: 50px;
   justify-content: center;
 }
+
+@media screen and (max-width:780px) {
+  #pie-de-pagDe{
+    display: none;
+  }
+  #redesmobileDe{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 30px 30px 50px;
+  }
+  
+}
 #PieDePagDe{
   background-color: #003375;
   color: #ffffff;
