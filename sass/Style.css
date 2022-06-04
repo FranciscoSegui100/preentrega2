@@ -16,6 +16,9 @@
   display: flex;
   justify-content: start; 
 }
+.btn-menu{
+  color: #ffffff;
+}
 .navtext {
   justify-content: flex-end;
 }
@@ -38,7 +41,7 @@
   border-right: groove #003375;
   border-left: groove #003375;
   line-height: 100px;
-  font-family:'Abel', sans-serif;;
+  font-family: "Abel" ;
   text-align: center;
   font-size: 45px;
   display: flex;
@@ -142,10 +145,8 @@
 }
 #Redesindx{
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  padding: 40px;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 #PieDePag2{
