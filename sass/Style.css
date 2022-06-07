@@ -3,6 +3,9 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.navbar-toggler-icon{
+  filter: invert(1);
+}
 #body{
   background:#ffffff;
 }
@@ -10,6 +13,7 @@
 .navtext {
   justify-content: flex-end;
 }
+
 .w-100{
   width: 100vw;
 }
