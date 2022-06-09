@@ -52,6 +52,9 @@
   border-left: groove #003375;
   padding: 10px;
 }
+#carouselExampleCaptions{
+  display: none;
+}
 #Tipos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,27 +155,6 @@
   justify-content: start;
   color: #003375;
 }
-@media screen and (max-width:780px) {
-  #container{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: groove #003375;
-    padding: 10px;
-  }
-  #container .titulo{
-    border-bottom: groove#003375;
-  }
-  .dlmedia{
-    display: flex;
-  }
-  #Tipos {
-    display: none;
-  }
-  #Info{
-    width: 100%;
-  }
-  
-}
 #Pie-de-pag .h4{
   color: #003375;
 }
@@ -212,32 +194,36 @@
   display: none;
 }
 @media screen and (max-width:780px) {
+  #container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: groove #003375;
+    padding: 10px;
+  }
+  #container .titulo{
+    border-bottom: groove#003375;
+  }
+  .dlmedia{
+    display: flex;
+  }
+  #Tipos {
+    display: none;
+  }
+  #Info{
+    width: 100%;
+  }
   #Redesindx {
     display: none;
   }
   #redesmobileindx{
     display: grid;
-    grid-template-columns: 30px 40px 40px;
-    grid-template-rows: 40px;
-    gap: 100px;
+    grid-template-columns: 30px 30px 30px;
+    justify-content: space-around;
   }
-    .Ig{
-      grid-row: 1/2;
-      grid-column: 1/2;
-    }
-    .Fb{
-      grid-row: 1/2;
-      grid-column: 2/3;
-    }
-    .Twitterindx{
-      margin-top: -8px;
-    }
-}
-@media screen and (min-width:780px) {
-  #carouselExampleCaptions{
-    display: none;
+  .Twitterindx{
+    margin-top: -10px;
   }
-  
+    
 }
 /* Hoja contacto */
 #Contacto{
@@ -427,9 +413,6 @@ text-align: start;
   grid-row: 2/3;
 }
 
-
-
-
 #Tabla-efectividad{
   border: 1px solid #000;
   background-color: #003375;
@@ -560,7 +543,6 @@ text-align: start;
     .tw-ab{
       margin-top: -8px ;
     }
-    
   }
   /* Hoja "Donde estamos" */
   #BodyDE{
