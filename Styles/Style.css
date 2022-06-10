@@ -424,6 +424,9 @@ text-align: start;
   margin-top: 15px;
   padding: 20px;
 }
+.TablaEfectividad{
+  height: 300px;
+}
 
 #Tabla-efectividad .Fila{
   color: #000000;
@@ -548,53 +551,6 @@ text-align: start;
   #BodyDE{
     background-color: #ffffff;
   }
-  #LogoDE{
-    text-align: left;
-    padding-left: 3px;
-    list-style: none;
-    line-height: 20px;
-    z-index: 999;
-    position: fixed;
-    display: flex;
-    justify-content: start; 
-  }
-#BarraNavDe .BarraNavDe {
-  width: 100%;
-  background-color: #003375;
-  list-style-type: none;
-  text-decoration: none;
-  position: fixed;
-  text-align: center;
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  margin-top: 0px;
-  
-}
-#BarraNavDe a{
-  background-color: #ffffff;
-  list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content:end ;
-  flex: auto;
-  color: #003375 ;
-  border-radius: 8px;
-}
-#BarraNavDe a:hover{
-  background-color: #003375;
-  color: #ffffff;
-}
-
 #Descripción{
   color: #003375;
   font-family: Georgia, 'Times New Roman', Times, serif;
