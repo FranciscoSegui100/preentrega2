@@ -1,0 +1,812 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+@mixin redes{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:15px;
+    }
+    $estilos: (
+        bg-color:#ffff,
+        color:#003375,
+        font-family1:'Times New Roman',
+        font-family2: "sans serif"
+        font-family3: "Abel"
+        );
+        
+.navbar-toggler-icon {
+	filter: invert(1);
+}
+#body {
+	background: map-get($estilos,bg-color);
+}
+.navtext {
+	justify-content: flex-end;
+}
+.w-100 {
+	width: 100vw;
+}
+#Info {
+	width: 100vw;
+	color: #000000;
+}
+#container {
+	width: 100vw;
+	padding: 200px;
+	border-top: none;
+	background-image: radial-gradient(white, rgb(47, 129, 252));
+	.titulo {
+		color: #000000;
+		border-top: groove #003375;
+		border-right: groove #003375;
+		border-left: groove #003375;
+		line-height: 100px;
+		font-family: map-get($estilos,font-family3);
+		text-align: center;
+		font-size: 45px;
+		display: flex;
+		justify-content: center;
+	}
+	.Descripcion {
+		color: #000000;
+		text-align: center;
+		font-family: map-get($estilos, font-family1);
+		font-size: 25px;
+		font-weight: bold;
+		background-color: transparent;
+		border-top: groove none;
+		border-right: groove map-get($estilos, color);
+		border-bottom: groove map-get($estilos, color);;
+		border-left: groove map-get($estilos, color);;
+		padding: 10px;
+	}
+}
+#carouselExampleCaptions {
+	display: none;
+}
+#Tipos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: map-get($estilos, color);;
+	gap: 150px;
+	justify-content: center;
+	padding: 50px;
+	margin-top: 30px;
+	.Dl {
+		display: grid;
+		color: map-get($estilos, bg-color);;
+		justify-content: start;
+		grid-column: 1/2;
+		transform: scale(1,1);
+		&:hover {
+			transform: scale(1.3, 1.3);
+			transition: all 1s;
+		}
+	}
+	.Img-Dl {
+		width: auto;
+		height: 150px;
+		justify-content: start;
+	}
+	.Dc {
+		color: map-get($estilos, bg-color);;
+		display: grid;
+		justify-content: start;
+		grid-column: 2/3;
+		transform: scale(1,1);
+		&:hover {
+			transform: scale(1.3, 1.3);
+			transition: all 1s;
+		}
+	}
+	.Img-Dc {
+		width: auto;
+		height: 150px;
+		justify-content: start;
+	}
+	.DT {
+		color: map-get($estilos, bg-color);
+		display: grid;
+		justify-content: start;
+		grid-column: 3/4;
+		transform: scale(1, 1);
+		&:hover {
+			transform: scale(1.2, 1.2);
+			transition: all 1s;
+		}
+	}
+	.Img-Dt {
+		width: auto;
+		height: 150px;
+		justify-content: end;
+	}
+}
+#Title-3 {
+	background-color: map-get($estilos, color);
+	justify-content: center;
+	margin-top: 60px;
+	padding: 40px;
+	font-family: map-get($estilos, font-family2);;
+	text-align: center;
+	color: map-get($estilos,bg-color);
+	.PyV {
+		justify-content: center;
+		margin-top: 60px;
+		font-family: map-get($estilos, font-family2);
+		color: map-get($estilos,bg-color);
+	}
+}
+#Titulo-3 {
+	color: map-get($estilos, color);
+	padding: 30px;
+	border-bottom: solid 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#Redesindx{
+	@include flex-row-space-around;
+	.Ig {
+		text-decoration: none;
+		display: flex;
+		justify-content: start;
+		margin-right: 300px;
+		transform: scale(1,1);
+		&:hover {
+			transform: scale(1.3, 1.3);
+		}
+	}
+	.Fb {
+		color: #003375;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		transform: scale(1, 1);
+		&:hover {
+			transform: scale(1.3, 1.3);
+		}
+	}
+	.Twi {
+		margin-left: 196px;
+		transform: scale(1, 1);
+		&:hover {
+			transform: scale(1.3, 1.3);
+		}
+	}
+}
+#PieDePag2 {
+	color: #003375;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	.PolPriv {
+		display: flex;
+		justify-content: start;
+		color: #003375;
+	}
+	.TrN {
+		display: flex;
+		justify-content: start;
+		color: #003375;
+	}
+}
+#redesmobileindx {
+	display: none;
+}
+#Contacto {
+	background: map-get($estilos,bg-color);
+}
+.Titulo-contacto-1 {
+	margin-top: 100px;
+}
+.Form1 {
+	background-color: #003375;
+	padding: 15px;
+}
+#RedesCt {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: 151px 150px 150px;
+	justify-items: end;
+	padding: 50px;
+}
+.Insta {
+	grid-column: 1/2;
+}
+.Face {
+	grid-column: 1/2;
+	text-align: center;
+}
+.Twit {
+	grid-column: 3/4;
+	text-align: center;
+}
+#redesctmobile {
+	display: none;
+}
+#opcionesDeContacto {
+	display: grid;
+	background-color: map-get($estilos, color);
+	color: map-get($estilos,bg-color);
+	padding: 50px;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	.TelefonoCont {
+		grid-column: 1/2;
+		font-size: 20px;
+	}
+	.direccion {
+		grid-column: 2/3;
+		font-size: 20px;
+		a {
+			text-decoration: none;
+			color: map-get($estilos,bg-color);
+		}
+	}
+	.contactoPrensa {
+		grid-column: 3/4;
+		font-size: 20px;
+	}
+}
+#Form-Contacto {
+	.nombre {
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+	}
+	.apellido {
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+	}
+	.edad {
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+	}
+	.telefono {
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+	}
+	.email {
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+		width: 250px;
+	}
+	.coment {
+		text-align: start;
+		margin-top: 20px;
+	}
+	.comentarios {
+		justify-content: start;
+		background-color: map-get($estilos,bg-color);
+		color: #000000;
+		width: 360px;
+		height: 210px;
+	}
+	.Titulo-contacto-1 {
+		color: #000000;
+	}
+	.Form-1 {
+		color: map-get($estilos,bg-color);
+		font-weight: bold;
+	}
+	.buttons {
+		text-align: start;
+	}
+}
+.nombre {
+	&:focus {
+		height: 27px;
+	}
+}
+.apellido {
+	&:focus {
+		height: 27px;
+	}
+}
+.edad {
+	&:focus {
+		height: 27px;
+	}
+}
+.telefono {
+	&:focus {
+		height: 27px;
+	}
+}
+.email {
+	&:focus {
+		height: 27px;
+	}
+}
+#buttons {
+	display: flex;
+	flex-direction: column;
+	.enviar {
+		padding: 10px;
+	}
+	.borrar {
+		padding: 10px;
+	}
+}
+#PieDePaginaContacto {
+	.Trabajr {
+		color: #003570;
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.Plt {
+		display: flex;
+		color: #003375;
+	}
+}
+.tituloAb {
+	text-align: center;
+	color: #003375;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#equipoDeAbogados {
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-rows: 1fr 1fr;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #003375;
+	gap: 20px;
+	.Messi {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.Cr7 {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.rc {
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+	.carlos {
+		grid-column: 4/5;
+		grid-row: 1/2;
+	}
+	.marcos {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+}
+#Tabla-efectividad {
+	border: 1px solid #000;
+	background-color: #003375;
+	display: flex;
+	justify-content: center;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	border-collapse: collapse;
+	margin-top: 15px;
+	padding: 20px;
+	.TablaEfectividad {
+		height: 300px;
+	}
+	.Fila {
+		color: #000000;
+		width: 25%;
+		text-align: left;
+		vertical-align: top;
+		border: 5px solid #000;
+		border-collapse: collapse;
+		padding: 0.3em;
+		caption-side: bottom;
+		background-color: #E8EDFF;
+		border: 1px solid transparent;
+		height: 30px;
+	}
+	.Fila2 {
+		color: #000000;
+		background-color: #B9C9FE;
+		width: 25%;
+		text-align: left;
+		vertical-align: top;
+		border: 5px solid #000;
+		border-collapse: collapse;
+		padding: 0.3em;
+		caption-side: bottom;
+	}
+	.Fila3 {
+		color: #000000;
+		background-color: #E8EDFF;
+		width: 25%;
+		text-align: left;
+		vertical-align: top;
+		border: 5px solid #000;
+		border-collapse: collapse;
+		padding: 0.3em;
+		caption-side: bottom;
+	}
+	.Fila4 {
+		color: #000000;
+		width: 25%;
+		text-align: left;
+		vertical-align: top;
+		border: 5px solid #000;
+		border-collapse: collapse;
+		padding: 0.3em;
+		caption-side: bottom;
+		background-color: #B9C9FE;
+	}
+	.Fila5 {
+		color: #000000;
+		width: 25%;
+		text-align: left;
+		vertical-align: top;
+		border: 5px solid #000;
+		border-collapse: collapse;
+		padding: 0.3em;
+		caption-side: bottom;
+		background-color: #E8EDFF;
+	}
+}
+#pie-de-pagAb {
+    margin-top: 15px;
+}
+#PieDePagAb {
+	color: map-get($estilos,bg-color);
+	background-color: map-get($estilos, color);
+}
+
+#redesmobileab {
+	display: none;
+}
+#BodyDE{
+    background-color: map-get($estilos,bg-color);
+}
+#Descripción {
+	color: map-get($estilos, color);
+	font-family: map-get($estilos,font-family);
+	margin-top: 110px;
+	.h1 {
+		text-align: center;
+		font-size: 40px;
+	}
+}
+#Ayuda {
+	text-align: center;
+	font-size: 25px;
+}
+.Maps {
+	display: flex;
+	justify-content: center;
+}
+
+#pie-de-pagDe {
+	@include redes;
+}
+#redesmobileDe {
+	display: none;
+}
+#PieDePagDe {
+	background-color: map-get($estilos, color);
+	color: map-get($estilos,bg-color);
+}
+#BodySN {
+	background-color: map-get($estilos,bg-color);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23003575'/%3E%3Cstop offset='1' stop-color='%23C9C9C9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23DEF3FF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23DEF3FF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.04'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+	background-size: cover;
+}
+#Sobre-nos{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 400px;
+	.Titulo {
+		color: map-get($estilos,bg-color);
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+		justify-content: end;
+	}
+	.Descripcion {
+		color: map-get($estilos,bg-color);
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-align: start;
+		justify-content: end;
+		margin-bottom: 20px;
+		line-height: 1.5;
+		padding: 20px;
+		margin-left: 652px;
+		grid-column: 1/3;
+		grid-row: 1/2;
+		margin-top: 350px;
+	}
+	.Imagen {
+		display: flex;
+		justify-content: start;
+	}
+}
+#video {
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 3.5/4;
+	.h2 {
+		display: grid;
+		color: #000000;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: left;
+		grid-column: 1/2;
+	}
+	.videoyt {
+		grid-row: 4/5;
+	}
+}
+#pie-de-pagSn {
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-around;
+}
+#PieDePagSn {
+	margin-top: 10px;
+	color: #000000;
+}
+.pmobile {
+	display: none;
+}
+#redesmobile {
+	display: none;
+}
+#BodyOp {
+	background-color: map-get($estilos,color);
+}
+#LogoOp {
+	text-align: left;
+	padding-left: 3px;
+	list-style: none;
+	line-height: 20px;
+	z-index: 999;
+	position: fixed;
+	display: flex;
+	justify-content: start;
+}
+#Opiniones {
+	display: grid;
+	background-color: map-get($estilos,bg-color);
+	gap: 10px;
+	margin-top: 12px;
+	padding: 100px;
+	grid-template-columns: 2fr 2fr 2fr;
+	grid-template-rows: 3fr;
+	background-color: map-get($estilos,bg-color);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(241,640,276)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230053BF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='1496' height='1246.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+	background-size: cover;
+	.Persona1 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona2 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona3 {
+        background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona4 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona5 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona6 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona7 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+	.Persona8 {
+		background-color: map-get($estilos,color);
+		color: map-get($estilos,bg-color);
+		padding: 10px;
+	}
+}
+#TituloOp {
+	text-align: center;
+	color: map-get($estilos,bg-color);
+	border-bottom: solid #ffffff 3px;
+	padding: 45px;
+	margin-bottom: -11px;
+	background-color: map-get($estilos,bg-color);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(241,640,276)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230053BF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='1496' height='1246.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+	background-size: cover;
+}
+
+#pie-de-pag-op {
+	background-color: #003375;
+	color: map-get($estilos,bg-color);
+	display: flex;
+	padding: 30px;
+	flex-direction: row;
+	gap: 330px;
+	justify-content: center;
+}
+#CondicionesOp {
+	color: map-get($estilos,bg-color);
+	margin-top: 10px;
+}
+#redesmobileop {
+	display: none;
+}
+@media screen and (max-width:780px) {
+	#container {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: groove #003375;
+		padding: 10px;
+		.titulo {
+			border-bottom: groove#003375;
+		}
+	}
+	.dlmedia {
+		display: flex;
+	}
+	#Tipos {
+		display: none;
+	}
+	#Info {
+		width: 100%;
+	}
+	#Redesindx {
+		display: none;
+	}
+	#redesmobileindx {
+		display: grid;
+		grid-template-columns: 30px 30px 30px;
+		justify-content: space-around;
+	}
+	.Twitterindx {
+		margin-top: -10px;
+	}
+	#RedesCt {
+		display: none;
+	}
+	#redesctmobile {
+		display: grid;
+		grid-template-columns: 30px 30px 30px;
+		justify-content: space-around;
+	}
+	#opcionesDeContacto {
+		.contactoPrensa {
+			display: none;
+		}
+		gap: 50px;
+	}
+	.equipoDeAbogados {
+		display: grid;
+		grid-template-columns: 1fr;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: map-get($estilos, color);
+		gap: 10px;
+	}
+	#Tabla-efectividad {
+		.Messi {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		.Cr7 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+		.rc {
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+		.carlos {
+			grid-column: 1/2;
+			grid-row: 4/5;
+		}
+		.marcos {
+			grid-column: 1/2;
+			grid-row: 5/6;
+		}
+	}
+	#pie-de-pagAb {
+		display: none;
+	}
+	#redesmobileab {
+		display: grid;
+		grid-template-columns: 30px 30px 50px;
+		text-align: center;
+		justify-content: space-between;
+	}
+	.tw-ab {
+		margin-top: -8px;
+	}
+	#pie-de-pagDe {
+		display: none;
+	}
+	#redesmobileDe {
+		display: grid;
+		align-items: center;
+		justify-content: space-between;
+		grid-template-columns: 30px 30px 50px;
+	}
+	#Sobre-nos {
+		.Imagen {
+			display: none;
+		}
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: 300px 400px;
+		.Descripcion {
+			display: none;
+		}
+		.pmobile {
+			color: map-get($estilos,bg-color);
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			text-align: start;
+			justify-content: end;
+			margin-bottom: 20px;
+			line-height: 1.5;
+			padding: 20px;
+			grid-column: 1/2;
+			grid-row: 1/3;
+			margin-left: 0%;
+			margin-top: 10px;
+		}
+		.Titulo {
+			grid-column: 1/2;
+			grid-row: 1/3;
+		}
+	}
+	.pmobile {
+		display: grid;
+	}
+	#video {
+		grid-row: 1/2;
+		grid-column: 1/2;
+		margin-top: 390px;
+	}
+	#pie-de-pagSn {
+		display: none;
+	}
+	#redesmobile {
+		display: grid;
+		grid-template-columns: 30px 60px 60px;
+		gap: 80px;
+		margin-top: 100px;
+		margin-bottom: -100px;
+		justify-content: space-around;
+	}
+	.TwitterSn {
+		margin-top: -7px;
+	}
+	#TituloOp {
+		color: map-get($estilos, color);
+	}
+	#Opiniones {
+		padding: 0%;
+		margin-bottom: 10px;
+	}
+	#pie-de-pag-op {
+		display: none;
+	}
+	#redesmobileop {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 30px 30px 30px;
+		justify-content: space-around;
+	}
+}
