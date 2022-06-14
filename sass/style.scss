@@ -16,7 +16,9 @@
         font-family2: "sans serif"
         font-family3: "Abel"
         );
-        
+#redeparamobiles{
+	display: none;
+}
 .navbar-toggler-icon {
 	filter: invert(1);
 }
@@ -149,7 +151,7 @@
 	margin-bottom: 10px;
 }
 #Redesindx{
-	@include flex-row-space-around;
+	@include redes();
 	.Ig {
 		text-decoration: none;
 		display: flex;
@@ -195,7 +197,7 @@
 	}
 }
 #redesmobileindx {
-	display: none;
+	@extend #redeparamobiles;
 }
 #Contacto {
 	background: map-get($estilos,bg-color);
@@ -226,7 +228,7 @@
 	text-align: center;
 }
 #redesctmobile {
-	display: none;
+	@extend #redeparamobiles;
 }
 #opcionesDeContacto {
 	display: grid;
@@ -458,7 +460,7 @@
 }
 
 #redesmobileab {
-	display: none;
+	@extend #redeparamobiles;
 }
 #BodyDE{
     background-color: map-get($estilos,bg-color);
@@ -485,7 +487,7 @@
 	@include redes;
 }
 #redesmobileDe {
-	display: none;
+	@extend #redeparamobiles;
 }
 #PieDePagDe {
 	background-color: map-get($estilos, color);
@@ -553,7 +555,7 @@
 	display: none;
 }
 #redesmobile {
-	display: none;
+	@extend #redeparamobiles;
 }
 #BodyOp {
 	background-color: map-get($estilos,color);
@@ -634,20 +636,14 @@
 }
 
 #pie-de-pag-op {
-	background-color: #003375;
-	color: map-get($estilos,bg-color);
-	display: flex;
-	padding: 30px;
-	flex-direction: row;
-	gap: 330px;
-	justify-content: center;
+	@include redes()
 }
 #CondicionesOp {
 	color: map-get($estilos,bg-color);
 	margin-top: 10px;
 }
 #redesmobileop {
-	display: none;
+	@extend #redeparamobiles;
 }
 @media screen and (max-width:780px) {
 	#container {
@@ -669,7 +665,7 @@
 		width: 100%;
 	}
 	#Redesindx {
-		display: none;
+		@extend #redeparamobiles;
 	}
 	#redesmobileindx {
 		display: grid;
@@ -680,7 +676,7 @@
 		margin-top: -10px;
 	}
 	#RedesCt {
-		display: none;
+		@extend #redeparamobiles;
 	}
 	#redesctmobile {
 		display: grid;
@@ -804,9 +800,6 @@
 		display: none;
 	}
 	#redesmobileop {
-		margin-top: 40px;
-		display: grid;
-		grid-template-columns: 30px 30px 30px;
-		justify-content: space-around;
+		@include redes;
 	}
 }
