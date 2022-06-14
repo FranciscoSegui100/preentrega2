@@ -3,6 +3,7 @@
 	padding: 0%;
 	box-sizing: border-box;
 }
+
 @mixin redes{
     display:flex;
     flex-direction:row;
@@ -14,11 +15,7 @@
         color:#003375,
         font-family1:'Times New Roman',
         font-family2: "sans serif"
-        font-family3: "Abel"
         );
-#redeparamobiles{
-	display: none;
-}
 .navbar-toggler-icon {
 	filter: invert(1);
 }
@@ -74,7 +71,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	background-color: map-get($estilos, color);;
+	background-color: map-get($estilos, color);
 	gap: 150px;
 	justify-content: center;
 	padding: 50px;
@@ -197,17 +194,13 @@
 	}
 }
 #redesmobileindx {
-	@extend #redeparamobiles;
+	display: none;
 }
 #Contacto {
 	background: map-get($estilos,bg-color);
 }
 .Titulo-contacto-1 {
 	margin-top: 100px;
-}
-.Form1 {
-	background-color: #003375;
-	padding: 15px;
 }
 #RedesCt {
 	display: grid;
@@ -218,17 +211,16 @@
 }
 .Insta {
 	grid-column: 1/2;
+	text-align: center;
 }
 .Face {
-	grid-column: 1/2;
-	text-align: center;
+	@extend .Insta
 }
 .Twit {
-	grid-column: 3/4;
-	text-align: center;
+	@extend .Insta
 }
 #redesctmobile {
-	@extend #redeparamobiles;
+	display: none;
 }
 #opcionesDeContacto {
 	display: grid;
@@ -257,84 +249,71 @@
 	}
 }
 #Form-Contacto {
-	.nombre {
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-	}
-	.apellido {
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-	}
-	.edad {
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-	}
-	.telefono {
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-	}
-	.email {
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-		width: 250px;
-	}
-	.coment {
-		text-align: start;
-		margin-top: 20px;
-	}
-	.comentarios {
-		justify-content: start;
-		background-color: map-get($estilos,bg-color);
-		color: #000000;
-		width: 360px;
-		height: 210px;
-	}
 	.Titulo-contacto-1 {
 		color: #000000;
 	}
-	.Form-1 {
-		color: map-get($estilos,bg-color);
-		font-weight: bold;
+	#Form1 {
+		background-color: map-get($estilos, color);
+		padding: 15px;
+		.nombre{
+			color: map-get($estilos, bg-color);
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+		.Apellido{
+			@extend .nombre
+		}
+		.edad{
+			@extend .Apellido
+		}
+		.tel{
+			@extend .edad
+		}
+		.mail{
+			@extend .edad
+			
+		}
+		.comentarios {
+			justify-content: start;
+			background-color: map-get($estilos,bg-color);
+			color: #000000;
+			width: 360px;
+			height: 210px;
+		}
+		.checkbox {
+			display: flex;
+			flex-direction: column;
+			color: map-get($estilos, bg-color);
+			margin: 5px;
+		}
 	}
-	.buttons {
-		text-align: start;
+	.nombre {
+		&:focus {
+			height: 40px;
+		}
 	}
-}
-.nombre {
+	.apellido {
 	&:focus {
-		height: 27px;
-	}
-}
-.apellido {
-	&:focus {
-		height: 27px;
+		height: 40px;
 	}
 }
 .edad {
 	&:focus {
-		height: 27px;
+		height: 40px;
 	}
 }
 .telefono {
 	&:focus {
-		height: 27px;
+		height: 40px;
 	}
 }
 .email {
 	&:focus {
-		height: 27px;
+		height: 40px;
 	}
 }
-#buttons {
-	display: flex;
-	flex-direction: column;
-	.enviar {
-		padding: 10px;
-	}
-	.borrar {
-		padding: 10px;
-	}
 }
+
 #PieDePaginaContacto {
 	.Trabajr {
 		color: #003570;
@@ -460,7 +439,7 @@
 }
 
 #redesmobileab {
-	@extend #redeparamobiles;
+	display: none;
 }
 #BodyDE{
     background-color: map-get($estilos,bg-color);
@@ -487,7 +466,7 @@
 	@include redes;
 }
 #redesmobileDe {
-	@extend #redeparamobiles;
+	display: none;
 }
 #PieDePagDe {
 	background-color: map-get($estilos, color);
@@ -555,7 +534,7 @@
 	display: none;
 }
 #redesmobile {
-	@extend #redeparamobiles;
+	display: none;
 }
 #BodyOp {
 	background-color: map-get($estilos,color);
@@ -643,9 +622,12 @@
 	margin-top: 10px;
 }
 #redesmobileop {
-	@extend #redeparamobiles;
+	display: none;
 }
 @media screen and (max-width:780px) {
+	@mixin redeparamobiles{
+		display: none;
+	}
 	#container {
 		display: flex;
 		justify-content: space-around;
@@ -665,7 +647,7 @@
 		width: 100%;
 	}
 	#Redesindx {
-		@extend #redeparamobiles;
+		display: none;
 	}
 	#redesmobileindx {
 		display: grid;
@@ -676,7 +658,7 @@
 		margin-top: -10px;
 	}
 	#RedesCt {
-		@extend #redeparamobiles;
+		display: none;
 	}
 	#redesctmobile {
 		display: grid;
