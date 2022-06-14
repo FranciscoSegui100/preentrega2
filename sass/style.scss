@@ -36,7 +36,7 @@
 	width: 100vw;
 	padding: 200px;
 	border-top: none;
-	background-image: radial-gradient(white, rgb(47, 129, 252));
+	background-image:url(../img/OFarrell_WEB_Carrousell_1920x1080px.png);
 	.titulo {
 		color: #000000;
 		border-top: groove #003375;
@@ -68,11 +68,11 @@
 }
 #Tipos {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 300px;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	background-color: map-get($estilos, color);
-	gap: 150px;
+	gap: 100px;
 	justify-content: center;
 	padding: 50px;
 	margin-top: 30px;
