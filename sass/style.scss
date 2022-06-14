@@ -200,7 +200,9 @@
 	background: map-get($estilos,bg-color);
 }
 .Titulo-contacto-1 {
-	margin-top: 100px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 #RedesCt {
 	display: grid;
@@ -230,7 +232,6 @@
 	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 20px;
-	margin-bottom: 60px;
 	.TelefonoCont {
 		grid-column: 1/2;
 		font-size: 20px;
@@ -664,12 +665,13 @@
 		display: grid;
 		grid-template-columns: 30px 30px 30px;
 		justify-content: space-around;
+		margin-top: 15px;
 	}
 	#opcionesDeContacto {
+		gap: 50px;	
 		.contactoPrensa {
 			display: none;
 		}
-		gap: 50px;
 	}
 	.equipoDeAbogados {
 		display: grid;
