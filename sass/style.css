@@ -671,8 +671,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 300px 400px;
-      grid-template-rows: 300px 400px;
+  -ms-grid-rows: 30px 400px;
+      grid-template-rows: 30px 400px;
 }
 
 #Sobre-nos .Titulo {
@@ -701,7 +701,7 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin-top: 350px;
+  margin-top: 55px;
 }
 
 #Sobre-nos .Imagen {
@@ -713,32 +713,31 @@
           justify-content: start;
 }
 
+#h2 {
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
 #video {
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3.5/4;
-}
-
-#video .h2 {
-  display: -ms-grid;
-  display: grid;
-  color: #000000;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
 }
 
 #video .videoyt {
-  -ms-grid-row: 4;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 4/5;
+  grid-row: 1/2;
+}
+
+#video .videoyt2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 #pie-de-pagSn {
@@ -785,7 +784,6 @@
 #Opiniones {
   display: -ms-grid;
   display: grid;
-  background-color: #ffff;
   gap: 10px;
   margin-top: 12px;
   padding: 100px;
@@ -805,10 +803,24 @@
   padding: 10px;
 }
 
+#Opiniones .Persona1 .clasificacion {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
+}
+
 #Opiniones .Persona2 {
   background-color: #003375;
   color: #ffff;
   padding: 10px;
+}
+
+#Opiniones .Persona2 .clasificacion2 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 #Opiniones .Persona3 {
@@ -817,10 +829,24 @@
   padding: 10px;
 }
 
+#Opiniones .Persona3 .clasificacion3 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
+}
+
 #Opiniones .Persona4 {
   background-color: #003375;
   color: #ffff;
   padding: 10px;
+}
+
+#Opiniones .clasificacion4 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 #Opiniones .Persona5 {
@@ -829,10 +855,24 @@
   padding: 10px;
 }
 
+#Opiniones .clasificacion5 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
+}
+
 #Opiniones .Persona6 {
   background-color: #003375;
   color: #ffff;
   padding: 10px;
+}
+
+#Opiniones .clasificacion6 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 #Opiniones .Persona7 {
@@ -841,10 +881,31 @@
   padding: 10px;
 }
 
+#Opiniones .clasificacion7 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
+}
+
 #Opiniones .Persona8 {
   background-color: #003375;
   color: #ffff;
   padding: 10px;
+}
+
+#Opiniones .clasificacion8 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
+}
+
+#Opiniones .clasificacion9 {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 
 #TituloOp {
@@ -886,6 +947,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 157vh;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border-bottom: groove #003375;
@@ -1025,11 +1087,20 @@
     -ms-grid-rows: 300px 400px;
         grid-template-rows: 300px 400px;
   }
-  #Sobre-nos .Imagen {
-    display: none;
-  }
   #Sobre-nos .Descripcion {
     display: none;
+  }
+  #Sobre-nos .Imagen {
+    width: 100px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 50px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
   #Sobre-nos .pmobile {
     color: #ffff;
@@ -1062,28 +1133,23 @@
     display: -ms-grid;
     display: grid;
   }
+  #h2 {
+    display: none;
+  }
   #video {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    margin-top: 390px;
+    display: none;
   }
   #pie-de-pagSn {
     display: none;
   }
   #redesmobile {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 30px 60px 60px;
-        grid-template-columns: 30px 60px 60px;
-    gap: 80px;
-    margin-top: 100px;
-    margin-bottom: -100px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px;
   }
   .TwitterSn {
     margin-top: -7px;

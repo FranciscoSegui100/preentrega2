@@ -482,7 +482,7 @@
 #Sobre-nos{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 300px 400px;
+	grid-template-rows: 30px 400px;
 	.Titulo {
 		color: map-get($estilos,bg-color);
 		font-family: 'Times New Roman', Times, serif;
@@ -500,28 +500,31 @@
 		margin-left: 652px;
 		grid-column: 1/3;
 		grid-row: 1/2;
-		margin-top: 350px;
+		margin-top: 55px;
 	}
 	.Imagen {
 		display: flex;
 		justify-content: start;
 	}
 }
-#video {
-	display: grid;
-	grid-column: 1/2;
-	grid-row: 3.5/4;
-	.h2 {
-		display: grid;
-		color: #000000;
-		font-family: 'Times New Roman', Times, serif;
-		text-align: left;
-		grid-column: 1/2;
-	}
-	.videoyt {
-		grid-row: 4/5;
-	}
+#h2 {
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	margin-top: 30px;
 }
+	#video {
+		display: grid;
+		grid-column: 1/2;
+		
+		.videoyt {
+			grid-row:1/2;
+
+		}
+		.videoyt2{
+			grid-column: 2/3;
+		}
+	}
 #pie-de-pagSn {
 	display: flex;
 	margin-top: 50px;
@@ -550,9 +553,14 @@
 	display: flex;
 	justify-content: start;
 }
+@mixin clasificacion {
+		filter: brightness(10);
+		margin-top: -40px;
+		margin-bottom: -30px;
+}
+
 #Opiniones {
 	display: grid;
-	background-color: map-get($estilos,bg-color);
 	gap: 10px;
 	margin-top: 12px;
 	padding: 100px;
@@ -566,41 +574,68 @@
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
+		.clasificacion{
+			@include  clasificacion()
+		}
 	}
 	.Persona2 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
+		.clasificacion2{
+				@include clasificacion()
+		}
 	}
 	.Persona3 {
         background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
+		.clasificacion3{
+			@include clasificacion()
+		}
 	}
 	.Persona4 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
 	}
+	.clasificacion4 {
+		@include clasificacion()
+		}
 	.Persona5 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
+	}
+	.clasificacion5{
+		@include clasificacion()
 	}
 	.Persona6 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
 	}
+	.clasificacion6{
+		@include clasificacion()
+	}
 	.Persona7 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
 	}
+	.clasificacion7{
+		@include clasificacion()
+	}
 	.Persona8 {
 		background-color: map-get($estilos,color);
 		color: map-get($estilos,bg-color);
 		padding: 10px;
+	}
+	.clasificacion8{
+		@include clasificacion()
+	}
+	.clasificacion9{
+		@include clasificacion()
 	}
 }
 #TituloOp {
@@ -631,6 +666,7 @@
 	}
 	#container {
 		display: flex;
+		width: 157vh;
 		justify-content: space-around;
 		border-bottom: groove #003375;
 		padding: 10px;
@@ -724,14 +760,19 @@
 		grid-template-columns: 30px 30px 50px;
 	}
 	#Sobre-nos {
-		.Imagen {
-			display: none;
-		}
 		display: grid;
 		grid-template-columns: 300px 1fr;
 		grid-template-rows: 300px 400px;
 		.Descripcion {
 			display: none;
+		}
+		.Imagen {
+			width: 100px;
+			height: auto;
+			margin-top: 100px;
+			margin-left: 50px;
+			grid-column: 1/2;
+			grid-row: 2/3;
 		}
 		.pmobile {
 			color: map-get($estilos,bg-color);
@@ -754,21 +795,20 @@
 	.pmobile {
 		display: grid;
 	}
-	#video {
-		grid-row: 1/2;
-		grid-column: 1/2;
-		margin-top: 390px;
+	#h2{
+		display: none;
 	}
+	#video{
+		display: none;
+	}
+	
 	#pie-de-pagSn {
 		display: none;
 	}
 	#redesmobile {
-		display: grid;
-		grid-template-columns: 30px 60px 60px;
-		gap: 80px;
-		margin-top: 100px;
-		margin-bottom: -100px;
-		justify-content: space-around;
+		display:flex;
+		justify-content: space-between;
+		margin-top: 70px;
 	}
 	.TwitterSn {
 		margin-top: -7px;
