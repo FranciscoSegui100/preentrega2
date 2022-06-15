@@ -944,14 +944,16 @@
 
 @media screen and (max-width: 780px) {
   #container {
+    background-image: none;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #0047a2), to(white));
+    background: linear-gradient(0deg, #0047a2 8%, white 100%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 157vh;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border-bottom: groove #003375;
-    padding: 10px;
+    padding: 5px;
   }
   #container .titulo {
     border-bottom: groove #003375;
@@ -999,54 +1001,27 @@
   #opcionesDeContacto .contactoPrensa {
     display: none;
   }
-  .equipoDeAbogados {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  #Form-Contacto #Form1 .comentarios {
+    width: 300px;
+    margin-top: 15px;
+  }
+  #equipoDeAbogados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #003375;
     gap: 10px;
   }
-  #Tabla-efectividad .Messi {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-  #Tabla-efectividad .Cr7 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-  #Tabla-efectividad .rc {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-  }
-  #Tabla-efectividad .carlos {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-  }
-  #Tabla-efectividad .marcos {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    grid-row: 5/6;
+  #Tabla-efectividad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #pie-de-pagAb {
     display: none;
@@ -1089,7 +1064,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 155px;
+    margin-left: 120px;
   }
   #Sobre-nos .pmobile {
     color: #ffff;

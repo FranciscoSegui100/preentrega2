@@ -665,11 +665,12 @@
 		display: none;
 	}
 	#container {
+		background-image: none;
+		background: linear-gradient(0deg, rgba(0,71,162,1) 8%, rgba(255,255,255,1) 100%);
 		display: flex;
-		width: 157vh;
 		justify-content: space-around;
 		border-bottom: groove #003375;
-		padding: 10px;
+		padding: 5px;
 		.titulo {
 			border-bottom: groove#003375;
 		}
@@ -709,34 +710,22 @@
 			display: none;
 		}
 	}
-	.equipoDeAbogados {
-		display: grid;
-		grid-template-columns: 1fr;
+	#Form-Contacto #Form1 .comentarios{
+		width: 300px;
+		margin-top: 15px;
+	}
+	
+	#equipoDeAbogados {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		color: map-get($estilos, color);
 		gap: 10px;
 	}
 	#Tabla-efectividad {
-		.Messi {
-			grid-column: 1/2;
-			grid-row: 1/2;
-		}
-		.Cr7 {
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-		.rc {
-			grid-column: 1/2;
-			grid-row: 3/4;
-		}
-		.carlos {
-			grid-column: 1/2;
-			grid-row: 4/5;
-		}
-		.marcos {
-			grid-column: 1/2;
-			grid-row: 5/6;
-		}
+		display: flex;
+		
 	}
 	#pie-de-pagAb {
 		display: none;
@@ -768,7 +757,7 @@
 		}
 		.Titulo{
 			display: flex;
-			margin-left: 155px;
+			margin-left: 120px;
 		}
 		.pmobile{
 			color: map-get($estilos,bg-color);
