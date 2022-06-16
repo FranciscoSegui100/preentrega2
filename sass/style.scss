@@ -3,7 +3,7 @@
 	padding: 0%;
 	box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Raleway:wght@300&display=swap');
 @mixin redes{
     display:flex;
     flex-direction:row;
@@ -42,8 +42,9 @@
 		border-top: groove #003375;
 		border-right: groove #003375;
 		border-left: groove #003375;
+		font-family: 'Abel', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		line-height: 100px;
-		font-family: map-get($estilos,font-family3);
 		text-align: center;
 		font-size: 45px;
 		display: flex;
@@ -52,7 +53,8 @@
 	.Descripcion {
 		color: #000000;
 		text-align: center;
-		font-family: map-get($estilos, font-family1);
+		font-family: 'Abel', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 25px;
 		font-weight: bold;
 		background-color: transparent;
