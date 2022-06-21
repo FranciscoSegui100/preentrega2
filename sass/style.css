@@ -393,6 +393,12 @@
   font-weight: bold;
 }
 
+#Form-Contacto #Form1 .tel, #Form-Contacto #Form1 .mail {
+  color: #ffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 #Form-Contacto #Form1 .HorayDia {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,7 +439,7 @@
   height: 40px;
 }
 
-#Form-Contacto .edad:focus, #Form-Contacto #Form1 .tel:focus, #Form-Contacto #Form1 .mail:focus {
+#Form-Contacto .edad:focus {
   height: 40px;
 }
 

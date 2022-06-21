@@ -267,11 +267,12 @@
 			@extend .nombre
 		}
 		.tel{
-			@extend .edad
+			color: map-get($estilos, bg-color);
+			margin-bottom: 20px;
+			font-weight: bold;
 		}
 		.mail{
-			@extend .edad
-			
+			@extend .tel
 		}
 		.HorayDia {
 			display: flex;
