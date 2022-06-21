@@ -489,6 +489,13 @@
   grid-row: 1/2;
 }
 
+#equipoDeAbogados .Messi:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+}
+
 #equipoDeAbogados .Cr7 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -496,6 +503,13 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+}
+
+#equipoDeAbogados .Cr7:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 #equipoDeAbogados .rc {
@@ -507,6 +521,13 @@
   grid-row: 1/2;
 }
 
+#equipoDeAbogados .rc:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+}
+
 #equipoDeAbogados .carlos {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -516,6 +537,13 @@
   grid-row: 1/2;
 }
 
+#equipoDeAbogados .carlos:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
+}
+
 #equipoDeAbogados .marcos {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -523,6 +551,13 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+#equipoDeAbogados .marcos:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 #Tabla-efectividad {

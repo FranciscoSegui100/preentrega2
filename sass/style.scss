@@ -342,22 +342,42 @@
 	.Messi {
 		grid-column: 1/2;
 		grid-row: 1/2;
+		&:hover{
+			transition: all 1s;
+			box-shadow: 10px 5px 5px black;
+		}
 	}
 	.Cr7 {
 		grid-column: 2/3;
 		grid-row: 1/2;
+		&:hover{
+			transition: all 1s;
+			box-shadow: 10px 5px 5px black;
+		}
 	}
 	.rc {
 		grid-column: 3/4;
 		grid-row: 1/2;
+		&:hover{
+			transition: all 1s;
+			box-shadow: 10px 5px 5px black;
+		}
 	}
 	.carlos {
 		grid-column: 4/5;
 		grid-row: 1/2;
+		&:hover{
+			transition: all 1s;
+			box-shadow: 10px 5px 5px black;
+		}
 	}
 	.marcos {
 		grid-column: 1/2;
 		grid-row: 2/3;
+		&:hover{
+			transition: all 1s;
+			box-shadow: 10px 5px 5px black;
+		}
 	}
 }
 #Tabla-efectividad {
