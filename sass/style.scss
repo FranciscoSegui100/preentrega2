@@ -266,9 +266,6 @@
 		.Apellido{
 			@extend .nombre
 		}
-		.edad{
-			@extend .Apellido
-		}
 		.tel{
 			@extend .edad
 		}

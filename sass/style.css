@@ -387,7 +387,7 @@
   padding: 15px;
 }
 
-#Form-Contacto #Form1 .nombre, #Form-Contacto #Form1 .Apellido, #Form-Contacto #Form1 .edad, #Form-Contacto #Form1 .tel, #Form-Contacto #Form1 .mail {
+#Form-Contacto #Form1 .nombre, #Form-Contacto #Form1 .Apellido {
   color: #ffff;
   margin-bottom: 20px;
   font-weight: bold;
@@ -425,7 +425,7 @@
   margin-bottom: 5px;
 }
 
-#Form-Contacto .nombre:focus, #Form-Contacto #Form1 .Apellido:focus, #Form-Contacto #Form1 .edad:focus, #Form-Contacto #Form1 .tel:focus, #Form-Contacto #Form1 .mail:focus {
+#Form-Contacto .nombre:focus, #Form-Contacto #Form1 .Apellido:focus {
   height: 40px;
 }
 
