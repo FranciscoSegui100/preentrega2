@@ -277,11 +277,12 @@
 			
 		}
 		.comentarios {
-			justify-content: start;
-			background-color: map-get($estilos,bg-color);
-			color: #000000;
-			width: 360px;
-			height: 210px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background-color: map-get($estilos,color);
+			color: #ffffff;
+			font-weight: bold;
 		}
 		.checkbox {
 			display: flex;
