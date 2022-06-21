@@ -264,23 +264,20 @@
 			font-weight: bold;
 		}
 		.Apellido{
-			@extend .nombre
+			@extend .nombre;
 		}
 		.tel{
-			color: map-get($estilos, bg-color);
-			margin-bottom: 20px;
-			font-weight: bold;
+			@extend .nombre;
 		}
 		.mail{
-			@extend .tel
+			@extend .nombre;
+			
 		}
 		.HorayDia {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			background-color: map-get($estilos,color);
-			color: #ffffff;
-			font-weight: bold;
+			@extend .nombre;
 		}
 		.checkbox {
 			display: flex;

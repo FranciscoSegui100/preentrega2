@@ -387,13 +387,7 @@
   padding: 15px;
 }
 
-#Form-Contacto #Form1 .nombre, #Form-Contacto #Form1 .Apellido {
-  color: #ffff;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-#Form-Contacto #Form1 .tel, #Form-Contacto #Form1 .mail {
+#Form-Contacto #Form1 .nombre, #Form-Contacto #Form1 .Apellido, #Form-Contacto #Form1 .tel, #Form-Contacto #Form1 .mail, #Form-Contacto #Form1 .HorayDia {
   color: #ffff;
   margin-bottom: 20px;
   font-weight: bold;
@@ -410,9 +404,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #003375;
-  color: #ffffff;
-  font-weight: bold;
 }
 
 #Form-Contacto #Form1 .checkbox {
@@ -431,7 +422,7 @@
   margin-bottom: 5px;
 }
 
-#Form-Contacto .nombre:focus, #Form-Contacto #Form1 .Apellido:focus {
+#Form-Contacto .nombre:focus, #Form-Contacto #Form1 .Apellido:focus, #Form-Contacto #Form1 .tel:focus, #Form-Contacto #Form1 .mail:focus, #Form-Contacto #Form1 .HorayDia:focus {
   height: 40px;
 }
 
