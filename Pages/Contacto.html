@@ -107,7 +107,7 @@
             <h2>Si queres comunicarte con nosotros, completa el siguiente formulario:</h2>
                 <label for="1">Comunicate con nosotros para un asesoramiento</label>
             </div>
-        <form action="form.php" method="post" enctype="text/plain">
+        <form action="form.php" method="POST" enctype="text/plain">
             <div id="Form1">
             <div>
                 <label for="1" class="nombre">Nombre:</label>
@@ -128,14 +128,14 @@
             </div>
             <div>
                 <label for="4" class="mail">Ingresa tu correo electronico para comunicarnos con vos:</label>
-                <input type="email" name="mail" id="4" class="email"> 
+                <input type="email" name="email" id="4" class="email"> 
             </div>
-            <div class="comentarios">
+            <div class="HorayDia">
                 <p>Seleccionar Día y horario para el asesoramiento:</p>
                 <p>Día:</p>
-                <input type="date" name="dia" id="5">
+                <input type="date" name="dia" id="5" required>
                 <p>Horario:</p>
-                <input type="time" name="hora" id="6">
+                <input type="time" name="hora" id="6" required>
             </div>
                 <div class="checkbox">
                         <label for="Term. y cond." class="TyC" >Aceptas Terminos y condiciones</label>
