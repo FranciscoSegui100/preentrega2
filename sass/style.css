@@ -412,7 +412,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   color: #ffff;
-  margin: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #Form-Contacto .nombre:focus, #Form-Contacto #Form1 .Apellido:focus, #Form-Contacto #Form1 .edad:focus, #Form-Contacto #Form1 .tel:focus, #Form-Contacto #Form1 .mail:focus {

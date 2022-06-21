@@ -287,7 +287,9 @@
 			display: flex;
 			flex-direction: column;
 			color: map-get($estilos, bg-color);
-			margin: 5px;
+			align-items: flex-start;
+			margin-top: 5px;
+			margin-bottom: 5px;
 		}
 	}
 	.nombre {
